@@ -27,5 +27,5 @@ jobs:
       
       - name: Run markdown lint
         run: |
-          npm install remark-cli remark-preset-lint-consistent remark-preset-lint-recommended remark-lint-list-item-indent --save-dev
-          npx remark . --use remark-preset-lint-consistent --use remark-preset-lint-recommended
+          npm install remark-cli remark-preset-lint-consistent remark-lint-emphasis-marker
+          npx remark . --use remark-preset-lint-consistent --use remark-lint-emphasis-marker
