@@ -24,7 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
+        with: 
+          node-version: 'lastest'
       - name: Run markdown lint
         run: |
           npm -v
